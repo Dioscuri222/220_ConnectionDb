@@ -30,3 +30,7 @@ app.get('/', (req, res, next) => {
             res.status(500).send('internal Server Error');
         });
 })
+
+app.listen(port, () => {
+    console.log(`App running on ${port}.`);
+});
